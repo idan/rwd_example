@@ -1,0 +1,1 @@
+Responsive web design example from my DjangoCon Europe 2011 Talk
