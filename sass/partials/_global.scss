@@ -1,0 +1,56 @@
+$less-grid-element: "#wrap";
+
+body {
+  background: rgb(232, 232, 232);
+  color: rgb(60, 60, 60);
+  // Stops Mobile Safari from auto-adjusting font-sizes
+  -webkit-text-size-adjust: 100%;
+}
+
+#{$less-grid-element} {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+}
+
+// Selection colors (easy to forget)
+@include selection-color(unquote("rgb(255,255,158)"));
+
+header>h1 {
+    font-family: "League Gothic", Helvetica, Arial, sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 3.0em;
+    margin-bottom: 1.0em;
+}
+
+.even, .odd {
+    font-family: Georgia, Times, serif;
+    margin-bottom: 4.0em;
+    h1 {
+        padding: 10px;
+        font-size: 1.75em;
+        color: #FBED64;
+    }
+    p {
+        padding: 10px;
+        line-height: 1.3em;
+        color: rgba(255,255,255,0.75);
+    }
+}
+
+#foo {
+    background-color: #C0267C;
+}
+
+#bar {
+    background-color: #C0267C;
+}
+
+#baz {
+    background-color: #C0267C;
+}
+
+#spam {
+    background-color: #C0267C;
+}

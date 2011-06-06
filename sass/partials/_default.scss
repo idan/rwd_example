@@ -1,0 +1,23 @@
+/* Default Layout: 992px.
+ * Gutters: 24px.
+ * Outer margins: 48px.
+ * Leftover space for scrollbars @1024px: 32px.  */
+
+#{$less-grid-element} {
+  @include grid(10);
+  @include less-grid-background(10);
+}
+
+header>h1 {
+    font-size: 6.0em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.even, .odd {
+    @include columns(5);
+}
+
+.even {
+    @include omega;
+}

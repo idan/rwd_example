@@ -1,0 +1,79 @@
+$less-column-width: 68px;
+$less-gutter-width: 24px;
+
+@function column-width($columns) {
+    @return ($less-column-width * $columns) + ($less-gutter-width * ($columns - 1));
+}
+
+@function grid-padding-px($columns) {
+    @if $columns == 10 {
+        @return 48px;
+    } @else if $columns == 8 {
+        @return 28px;
+    } @else if $columns == 5 {
+        @return 22px;
+    } @else if $columns == 3 {
+        @return 34px;
+    } @else {
+        // should never be here...
+        @return 0px;
+    }
+}
+
+@function input-width($columns, $border: 0, $padding: 0) {
+    @return column-width($columns) - (2 * $border) - (2 * $padding);
+}
+
+@mixin less-grid-background($columns) {
+  @include column-grid-background(
+    $columns, $less-column-width, $less-gutter-width,
+    grid-padding-px($columns));
+}
+
+@mixin grid($columns) {
+    @include clearfix;
+    width: column-width($columns);
+    padding-left: grid-padding-px($columns);
+    padding-right: grid-padding-px($columns);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin columns($columns) {
+    display: inline;
+    float: left;
+    width: column-width($columns);
+    margin-right: $less-gutter-width;
+}
+
+@mixin full($columns, $pad: 0) {
+    @include columns($columns);
+    @include pad($pad);
+    @include omega;
+}
+
+@mixin prefix($columns) {
+    padding-left: column-width($columns) + $less-gutter-width;
+}
+
+@mixin suffix($columns) {
+    padding-right: column-width($columns);
+}
+
+@mixin pad($columns) {
+    @include prefix($columns);
+    @include suffix($columns);
+}
+
+@mixin omega {
+    margin-right: 0;
+}
+
+@mixin accessible-selection-color($color) {
+    $textcolor: contrast-color($color);
+    ::selection {background: $color; color: $textcolor;}
+    ::-moz-selection {background: $color; color: $textcolor;}
+    img::selection {background: transparent;}
+    img::-moz-selection {background: transparent;}
+    body {-webkit-tap-highlight-color: $color;}
+}

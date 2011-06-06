@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.swp
+*.un~
+*.db
+static_root/
+.sass-cache/

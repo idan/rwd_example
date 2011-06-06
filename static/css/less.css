@@ -1,0 +1,317 @@
+/* Less Framework 4
+ * http://lessframework.com
+ * by Joni Korpi
+ * License: http://creativecommons.org/licenses/MIT/ */
+/* line 17, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../.venv/rwd_example/gems/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 3, ../../sass/partials/_global.scss */
+body {
+  background: #e8e8e8;
+  color: #3c3c3c;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 10, ../../sass/partials/_global.scss */
+#wrap {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+}
+
+/* line 34, ../../../../.venv/rwd_example/gems/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
+::selection {
+  background: rgb(255,255,158);
+}
+
+/* line 35, ../../../../.venv/rwd_example/gems/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
+::-moz-selection {
+  background: rgb(255,255,158);
+}
+
+/* line 36, ../../../../.venv/rwd_example/gems/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
+img::selection {
+  background: transparent;
+}
+
+/* line 37, ../../../../.venv/rwd_example/gems/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
+img::-moz-selection {
+  background: transparent;
+}
+
+/* line 38, ../../../../.venv/rwd_example/gems/gems/compass-less-plugin-1.0/stylesheets/less/_framework.scss */
+body {
+  -webkit-tap-highlight-color: rgb(255,255,158);
+}
+
+/* line 19, ../../sass/partials/_global.scss */
+header > h1 {
+  font-family: "League Gothic", Helvetica, Arial, sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 3.0em;
+  margin-bottom: 1.0em;
+}
+
+/* line 27, ../../sass/partials/_global.scss */
+.even, .odd {
+  font-family: Georgia, Times, serif;
+  margin-bottom: 4.0em;
+}
+/* line 30, ../../sass/partials/_global.scss */
+.even h1, .odd h1 {
+  padding: 10px;
+  font-size: 1.75em;
+  color: #FBED64;
+}
+/* line 35, ../../sass/partials/_global.scss */
+.even p, .odd p {
+  padding: 10px;
+  line-height: 1.3em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 42, ../../sass/partials/_global.scss */
+#foo {
+  background-color: #C0267C;
+}
+
+/* line 46, ../../sass/partials/_global.scss */
+#bar {
+  background-color: #C0267C;
+}
+
+/* line 50, ../../sass/partials/_global.scss */
+#baz {
+  background-color: #C0267C;
+}
+
+/* line 54, ../../sass/partials/_global.scss */
+#spam {
+  background-color: #C0267C;
+}
+
+/* Default Layout: 992px.
+ * Gutters: 24px.
+ * Outer margins: 48px.
+ * Leftover space for scrollbars @1024px: 32px.  */
+/* line 6, ../../sass/partials/_default.scss */
+#wrap {
+  overflow: hidden;
+  *zoom: 1;
+  width: 896px;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 968 50%, color-stop(4.959%, rgba(0, 0, 0, 0)), color-stop(4.959%, rgba(100, 100, 225, 0.25)), color-stop(11.983%, rgba(100, 100, 225, 0.25)), color-stop(11.983%, rgba(0, 0, 0, 0)), color-stop(14.463%, rgba(0, 0, 0, 0)), color-stop(14.463%, rgba(100, 100, 225, 0.25)), color-stop(21.488%, rgba(100, 100, 225, 0.25)), color-stop(21.488%, rgba(0, 0, 0, 0)), color-stop(23.967%, rgba(0, 0, 0, 0)), color-stop(23.967%, rgba(100, 100, 225, 0.25)), color-stop(30.992%, rgba(100, 100, 225, 0.25)), color-stop(30.992%, rgba(0, 0, 0, 0)), color-stop(33.471%, rgba(0, 0, 0, 0)), color-stop(33.471%, rgba(100, 100, 225, 0.25)), color-stop(40.496%, rgba(100, 100, 225, 0.25)), color-stop(40.496%, rgba(0, 0, 0, 0)), color-stop(42.975%, rgba(0, 0, 0, 0)), color-stop(42.975%, rgba(100, 100, 225, 0.25)), color-stop(50%, rgba(100, 100, 225, 0.25)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(52.479%, rgba(0, 0, 0, 0)), color-stop(52.479%, rgba(100, 100, 225, 0.25)), color-stop(59.504%, rgba(100, 100, 225, 0.25)), color-stop(59.504%, rgba(0, 0, 0, 0)), color-stop(61.983%, rgba(0, 0, 0, 0)), color-stop(61.983%, rgba(100, 100, 225, 0.25)), color-stop(69.008%, rgba(100, 100, 225, 0.25)), color-stop(69.008%, rgba(0, 0, 0, 0)), color-stop(71.488%, rgba(0, 0, 0, 0)), color-stop(71.488%, rgba(100, 100, 225, 0.25)), color-stop(78.512%, rgba(100, 100, 225, 0.25)), color-stop(78.512%, rgba(0, 0, 0, 0)), color-stop(80.992%, rgba(0, 0, 0, 0)), color-stop(80.992%, rgba(100, 100, 225, 0.25)), color-stop(88.017%, rgba(100, 100, 225, 0.25)), color-stop(88.017%, rgba(0, 0, 0, 0)), color-stop(90.496%, rgba(0, 0, 0, 0)), color-stop(90.496%, rgba(100, 100, 225, 0.25)), color-stop(97.521%, rgba(100, 100, 225, 0.25)), color-stop(97.521%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 48px, rgba(100, 100, 225, 0.25) 48px, rgba(100, 100, 225, 0.25) 116px, rgba(0, 0, 0, 0) 116px, rgba(0, 0, 0, 0) 140px, rgba(100, 100, 225, 0.25) 140px, rgba(100, 100, 225, 0.25) 208px, rgba(0, 0, 0, 0) 208px, rgba(0, 0, 0, 0) 232px, rgba(100, 100, 225, 0.25) 232px, rgba(100, 100, 225, 0.25) 300px, rgba(0, 0, 0, 0) 300px, rgba(0, 0, 0, 0) 324px, rgba(100, 100, 225, 0.25) 324px, rgba(100, 100, 225, 0.25) 392px, rgba(0, 0, 0, 0) 392px, rgba(0, 0, 0, 0) 416px, rgba(100, 100, 225, 0.25) 416px, rgba(100, 100, 225, 0.25) 484px, rgba(0, 0, 0, 0) 484px, rgba(0, 0, 0, 0) 508px, rgba(100, 100, 225, 0.25) 508px, rgba(100, 100, 225, 0.25) 576px, rgba(0, 0, 0, 0) 576px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 668px, rgba(0, 0, 0, 0) 668px, rgba(0, 0, 0, 0) 692px, rgba(100, 100, 225, 0.25) 692px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 784px, rgba(100, 100, 225, 0.25) 784px, rgba(100, 100, 225, 0.25) 852px, rgba(0, 0, 0, 0) 852px, rgba(0, 0, 0, 0) 876px, rgba(100, 100, 225, 0.25) 876px, rgba(100, 100, 225, 0.25) 944px, rgba(0, 0, 0, 0) 944px, rgba(0, 0, 0, 0) 968px);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 48px, rgba(100, 100, 225, 0.25) 48px, rgba(100, 100, 225, 0.25) 116px, rgba(0, 0, 0, 0) 116px, rgba(0, 0, 0, 0) 140px, rgba(100, 100, 225, 0.25) 140px, rgba(100, 100, 225, 0.25) 208px, rgba(0, 0, 0, 0) 208px, rgba(0, 0, 0, 0) 232px, rgba(100, 100, 225, 0.25) 232px, rgba(100, 100, 225, 0.25) 300px, rgba(0, 0, 0, 0) 300px, rgba(0, 0, 0, 0) 324px, rgba(100, 100, 225, 0.25) 324px, rgba(100, 100, 225, 0.25) 392px, rgba(0, 0, 0, 0) 392px, rgba(0, 0, 0, 0) 416px, rgba(100, 100, 225, 0.25) 416px, rgba(100, 100, 225, 0.25) 484px, rgba(0, 0, 0, 0) 484px, rgba(0, 0, 0, 0) 508px, rgba(100, 100, 225, 0.25) 508px, rgba(100, 100, 225, 0.25) 576px, rgba(0, 0, 0, 0) 576px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 668px, rgba(0, 0, 0, 0) 668px, rgba(0, 0, 0, 0) 692px, rgba(100, 100, 225, 0.25) 692px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 784px, rgba(100, 100, 225, 0.25) 784px, rgba(100, 100, 225, 0.25) 852px, rgba(0, 0, 0, 0) 852px, rgba(0, 0, 0, 0) 876px, rgba(100, 100, 225, 0.25) 876px, rgba(100, 100, 225, 0.25) 944px, rgba(0, 0, 0, 0) 944px, rgba(0, 0, 0, 0) 968px);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 48px, rgba(100, 100, 225, 0.25) 48px, rgba(100, 100, 225, 0.25) 116px, rgba(0, 0, 0, 0) 116px, rgba(0, 0, 0, 0) 140px, rgba(100, 100, 225, 0.25) 140px, rgba(100, 100, 225, 0.25) 208px, rgba(0, 0, 0, 0) 208px, rgba(0, 0, 0, 0) 232px, rgba(100, 100, 225, 0.25) 232px, rgba(100, 100, 225, 0.25) 300px, rgba(0, 0, 0, 0) 300px, rgba(0, 0, 0, 0) 324px, rgba(100, 100, 225, 0.25) 324px, rgba(100, 100, 225, 0.25) 392px, rgba(0, 0, 0, 0) 392px, rgba(0, 0, 0, 0) 416px, rgba(100, 100, 225, 0.25) 416px, rgba(100, 100, 225, 0.25) 484px, rgba(0, 0, 0, 0) 484px, rgba(0, 0, 0, 0) 508px, rgba(100, 100, 225, 0.25) 508px, rgba(100, 100, 225, 0.25) 576px, rgba(0, 0, 0, 0) 576px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 668px, rgba(0, 0, 0, 0) 668px, rgba(0, 0, 0, 0) 692px, rgba(100, 100, 225, 0.25) 692px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 784px, rgba(100, 100, 225, 0.25) 784px, rgba(100, 100, 225, 0.25) 852px, rgba(0, 0, 0, 0) 852px, rgba(0, 0, 0, 0) 876px, rgba(100, 100, 225, 0.25) 876px, rgba(100, 100, 225, 0.25) 944px, rgba(0, 0, 0, 0) 944px, rgba(0, 0, 0, 0) 968px);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 48px, rgba(100, 100, 225, 0.25) 48px, rgba(100, 100, 225, 0.25) 116px, rgba(0, 0, 0, 0) 116px, rgba(0, 0, 0, 0) 140px, rgba(100, 100, 225, 0.25) 140px, rgba(100, 100, 225, 0.25) 208px, rgba(0, 0, 0, 0) 208px, rgba(0, 0, 0, 0) 232px, rgba(100, 100, 225, 0.25) 232px, rgba(100, 100, 225, 0.25) 300px, rgba(0, 0, 0, 0) 300px, rgba(0, 0, 0, 0) 324px, rgba(100, 100, 225, 0.25) 324px, rgba(100, 100, 225, 0.25) 392px, rgba(0, 0, 0, 0) 392px, rgba(0, 0, 0, 0) 416px, rgba(100, 100, 225, 0.25) 416px, rgba(100, 100, 225, 0.25) 484px, rgba(0, 0, 0, 0) 484px, rgba(0, 0, 0, 0) 508px, rgba(100, 100, 225, 0.25) 508px, rgba(100, 100, 225, 0.25) 576px, rgba(0, 0, 0, 0) 576px, rgba(0, 0, 0, 0) 600px, rgba(100, 100, 225, 0.25) 600px, rgba(100, 100, 225, 0.25) 668px, rgba(0, 0, 0, 0) 668px, rgba(0, 0, 0, 0) 692px, rgba(100, 100, 225, 0.25) 692px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 784px, rgba(100, 100, 225, 0.25) 784px, rgba(100, 100, 225, 0.25) 852px, rgba(0, 0, 0, 0) 852px, rgba(0, 0, 0, 0) 876px, rgba(100, 100, 225, 0.25) 876px, rgba(100, 100, 225, 0.25) 944px, rgba(0, 0, 0, 0) 944px, rgba(0, 0, 0, 0) 968px);
+  background-position: left top;
+}
+
+/* line 11, ../../sass/partials/_default.scss */
+header > h1 {
+  font-size: 6.0em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* line 17, ../../sass/partials/_default.scss */
+.even, .odd {
+  display: inline;
+  float: left;
+  width: 436px;
+  margin-right: 24px;
+}
+
+/* line 21, ../../sass/partials/_default.scss */
+.even {
+  margin-right: 0;
+}
+
+/* Tablet Layout: 768px.
+ * Gutters: 24px.
+ * Outer margins: 28px.
+ * Inherits styles from: Default Layout.  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 7, ../../sass/partials/_tablet.scss */
+  #wrap {
+    overflow: hidden;
+    *zoom: 1;
+    width: 712px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 764 50%, color-stop(3.665%, rgba(0, 0, 0, 0)), color-stop(3.665%, rgba(100, 100, 225, 0.25)), color-stop(12.565%, rgba(100, 100, 225, 0.25)), color-stop(12.565%, rgba(0, 0, 0, 0)), color-stop(15.707%, rgba(0, 0, 0, 0)), color-stop(15.707%, rgba(100, 100, 225, 0.25)), color-stop(24.607%, rgba(100, 100, 225, 0.25)), color-stop(24.607%, rgba(0, 0, 0, 0)), color-stop(27.749%, rgba(0, 0, 0, 0)), color-stop(27.749%, rgba(100, 100, 225, 0.25)), color-stop(36.649%, rgba(100, 100, 225, 0.25)), color-stop(36.649%, rgba(0, 0, 0, 0)), color-stop(39.791%, rgba(0, 0, 0, 0)), color-stop(39.791%, rgba(100, 100, 225, 0.25)), color-stop(48.691%, rgba(100, 100, 225, 0.25)), color-stop(48.691%, rgba(0, 0, 0, 0)), color-stop(51.832%, rgba(0, 0, 0, 0)), color-stop(51.832%, rgba(100, 100, 225, 0.25)), color-stop(60.733%, rgba(100, 100, 225, 0.25)), color-stop(60.733%, rgba(0, 0, 0, 0)), color-stop(63.874%, rgba(0, 0, 0, 0)), color-stop(63.874%, rgba(100, 100, 225, 0.25)), color-stop(72.775%, rgba(100, 100, 225, 0.25)), color-stop(72.775%, rgba(0, 0, 0, 0)), color-stop(75.916%, rgba(0, 0, 0, 0)), color-stop(75.916%, rgba(100, 100, 225, 0.25)), color-stop(84.817%, rgba(100, 100, 225, 0.25)), color-stop(84.817%, rgba(0, 0, 0, 0)), color-stop(87.958%, rgba(0, 0, 0, 0)), color-stop(87.958%, rgba(100, 100, 225, 0.25)), color-stop(96.859%, rgba(100, 100, 225, 0.25)), color-stop(96.859%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 28px, rgba(100, 100, 225, 0.25) 28px, rgba(100, 100, 225, 0.25) 96px, rgba(0, 0, 0, 0) 96px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 188px, rgba(0, 0, 0, 0) 188px, rgba(0, 0, 0, 0) 212px, rgba(100, 100, 225, 0.25) 212px, rgba(100, 100, 225, 0.25) 280px, rgba(0, 0, 0, 0) 280px, rgba(0, 0, 0, 0) 304px, rgba(100, 100, 225, 0.25) 304px, rgba(100, 100, 225, 0.25) 372px, rgba(0, 0, 0, 0) 372px, rgba(0, 0, 0, 0) 396px, rgba(100, 100, 225, 0.25) 396px, rgba(100, 100, 225, 0.25) 464px, rgba(0, 0, 0, 0) 464px, rgba(0, 0, 0, 0) 488px, rgba(100, 100, 225, 0.25) 488px, rgba(100, 100, 225, 0.25) 556px, rgba(0, 0, 0, 0) 556px, rgba(0, 0, 0, 0) 580px, rgba(100, 100, 225, 0.25) 580px, rgba(100, 100, 225, 0.25) 648px, rgba(0, 0, 0, 0) 648px, rgba(0, 0, 0, 0) 672px, rgba(100, 100, 225, 0.25) 672px, rgba(100, 100, 225, 0.25) 740px, rgba(0, 0, 0, 0) 740px, rgba(0, 0, 0, 0) 764px);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 28px, rgba(100, 100, 225, 0.25) 28px, rgba(100, 100, 225, 0.25) 96px, rgba(0, 0, 0, 0) 96px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 188px, rgba(0, 0, 0, 0) 188px, rgba(0, 0, 0, 0) 212px, rgba(100, 100, 225, 0.25) 212px, rgba(100, 100, 225, 0.25) 280px, rgba(0, 0, 0, 0) 280px, rgba(0, 0, 0, 0) 304px, rgba(100, 100, 225, 0.25) 304px, rgba(100, 100, 225, 0.25) 372px, rgba(0, 0, 0, 0) 372px, rgba(0, 0, 0, 0) 396px, rgba(100, 100, 225, 0.25) 396px, rgba(100, 100, 225, 0.25) 464px, rgba(0, 0, 0, 0) 464px, rgba(0, 0, 0, 0) 488px, rgba(100, 100, 225, 0.25) 488px, rgba(100, 100, 225, 0.25) 556px, rgba(0, 0, 0, 0) 556px, rgba(0, 0, 0, 0) 580px, rgba(100, 100, 225, 0.25) 580px, rgba(100, 100, 225, 0.25) 648px, rgba(0, 0, 0, 0) 648px, rgba(0, 0, 0, 0) 672px, rgba(100, 100, 225, 0.25) 672px, rgba(100, 100, 225, 0.25) 740px, rgba(0, 0, 0, 0) 740px, rgba(0, 0, 0, 0) 764px);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 28px, rgba(100, 100, 225, 0.25) 28px, rgba(100, 100, 225, 0.25) 96px, rgba(0, 0, 0, 0) 96px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 188px, rgba(0, 0, 0, 0) 188px, rgba(0, 0, 0, 0) 212px, rgba(100, 100, 225, 0.25) 212px, rgba(100, 100, 225, 0.25) 280px, rgba(0, 0, 0, 0) 280px, rgba(0, 0, 0, 0) 304px, rgba(100, 100, 225, 0.25) 304px, rgba(100, 100, 225, 0.25) 372px, rgba(0, 0, 0, 0) 372px, rgba(0, 0, 0, 0) 396px, rgba(100, 100, 225, 0.25) 396px, rgba(100, 100, 225, 0.25) 464px, rgba(0, 0, 0, 0) 464px, rgba(0, 0, 0, 0) 488px, rgba(100, 100, 225, 0.25) 488px, rgba(100, 100, 225, 0.25) 556px, rgba(0, 0, 0, 0) 556px, rgba(0, 0, 0, 0) 580px, rgba(100, 100, 225, 0.25) 580px, rgba(100, 100, 225, 0.25) 648px, rgba(0, 0, 0, 0) 648px, rgba(0, 0, 0, 0) 672px, rgba(100, 100, 225, 0.25) 672px, rgba(100, 100, 225, 0.25) 740px, rgba(0, 0, 0, 0) 740px, rgba(0, 0, 0, 0) 764px);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 28px, rgba(100, 100, 225, 0.25) 28px, rgba(100, 100, 225, 0.25) 96px, rgba(0, 0, 0, 0) 96px, rgba(0, 0, 0, 0) 120px, rgba(100, 100, 225, 0.25) 120px, rgba(100, 100, 225, 0.25) 188px, rgba(0, 0, 0, 0) 188px, rgba(0, 0, 0, 0) 212px, rgba(100, 100, 225, 0.25) 212px, rgba(100, 100, 225, 0.25) 280px, rgba(0, 0, 0, 0) 280px, rgba(0, 0, 0, 0) 304px, rgba(100, 100, 225, 0.25) 304px, rgba(100, 100, 225, 0.25) 372px, rgba(0, 0, 0, 0) 372px, rgba(0, 0, 0, 0) 396px, rgba(100, 100, 225, 0.25) 396px, rgba(100, 100, 225, 0.25) 464px, rgba(0, 0, 0, 0) 464px, rgba(0, 0, 0, 0) 488px, rgba(100, 100, 225, 0.25) 488px, rgba(100, 100, 225, 0.25) 556px, rgba(0, 0, 0, 0) 556px, rgba(0, 0, 0, 0) 580px, rgba(100, 100, 225, 0.25) 580px, rgba(100, 100, 225, 0.25) 648px, rgba(0, 0, 0, 0) 648px, rgba(0, 0, 0, 0) 672px, rgba(100, 100, 225, 0.25) 672px, rgba(100, 100, 225, 0.25) 740px, rgba(0, 0, 0, 0) 740px, rgba(0, 0, 0, 0) 764px);
+    background-position: left top;
+  }
+
+  /* line 11, ../../sass/partials/_tablet.scss */
+  .even, .odd {
+    display: inline;
+    float: left;
+    width: 344px;
+    margin-right: 24px;
+  }
+
+  /* line 15, ../../sass/partials/_tablet.scss */
+  .even {
+    margin-right: 0;
+  }
+}
+/* Mobile Layout: 320px.
+ * Gutters: 24px.
+ * Outer margins: 34px.
+ * Inherits styles from: Default Layout.  */
+@media only screen and (max-width: 767px) {
+  /* line 7, ../../sass/partials/_mobile.scss */
+  #wrap {
+    overflow: hidden;
+    *zoom: 1;
+    width: 252px;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 310 50%, color-stop(10.968%, rgba(0, 0, 0, 0)), color-stop(10.968%, rgba(100, 100, 225, 0.25)), color-stop(32.903%, rgba(100, 100, 225, 0.25)), color-stop(32.903%, rgba(0, 0, 0, 0)), color-stop(40.645%, rgba(0, 0, 0, 0)), color-stop(40.645%, rgba(100, 100, 225, 0.25)), color-stop(62.581%, rgba(100, 100, 225, 0.25)), color-stop(62.581%, rgba(0, 0, 0, 0)), color-stop(70.323%, rgba(0, 0, 0, 0)), color-stop(70.323%, rgba(100, 100, 225, 0.25)), color-stop(92.258%, rgba(100, 100, 225, 0.25)), color-stop(92.258%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 34px, rgba(100, 100, 225, 0.25) 34px, rgba(100, 100, 225, 0.25) 102px, rgba(0, 0, 0, 0) 102px, rgba(0, 0, 0, 0) 126px, rgba(100, 100, 225, 0.25) 126px, rgba(100, 100, 225, 0.25) 194px, rgba(0, 0, 0, 0) 194px, rgba(0, 0, 0, 0) 218px, rgba(100, 100, 225, 0.25) 218px, rgba(100, 100, 225, 0.25) 286px, rgba(0, 0, 0, 0) 286px, rgba(0, 0, 0, 0) 310px);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 34px, rgba(100, 100, 225, 0.25) 34px, rgba(100, 100, 225, 0.25) 102px, rgba(0, 0, 0, 0) 102px, rgba(0, 0, 0, 0) 126px, rgba(100, 100, 225, 0.25) 126px, rgba(100, 100, 225, 0.25) 194px, rgba(0, 0, 0, 0) 194px, rgba(0, 0, 0, 0) 218px, rgba(100, 100, 225, 0.25) 218px, rgba(100, 100, 225, 0.25) 286px, rgba(0, 0, 0, 0) 286px, rgba(0, 0, 0, 0) 310px);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 34px, rgba(100, 100, 225, 0.25) 34px, rgba(100, 100, 225, 0.25) 102px, rgba(0, 0, 0, 0) 102px, rgba(0, 0, 0, 0) 126px, rgba(100, 100, 225, 0.25) 126px, rgba(100, 100, 225, 0.25) 194px, rgba(0, 0, 0, 0) 194px, rgba(0, 0, 0, 0) 218px, rgba(100, 100, 225, 0.25) 218px, rgba(100, 100, 225, 0.25) 286px, rgba(0, 0, 0, 0) 286px, rgba(0, 0, 0, 0) 310px);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 34px, rgba(100, 100, 225, 0.25) 34px, rgba(100, 100, 225, 0.25) 102px, rgba(0, 0, 0, 0) 102px, rgba(0, 0, 0, 0) 126px, rgba(100, 100, 225, 0.25) 126px, rgba(100, 100, 225, 0.25) 194px, rgba(0, 0, 0, 0) 194px, rgba(0, 0, 0, 0) 218px, rgba(100, 100, 225, 0.25) 218px, rgba(100, 100, 225, 0.25) 286px, rgba(0, 0, 0, 0) 286px, rgba(0, 0, 0, 0) 310px);
+    background-position: left top;
+  }
+
+  /* line 11, ../../sass/partials/_mobile.scss */
+  header > h1 {
+    font-size: 4.0em;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+  }
+
+  /* line 17, ../../sass/partials/_mobile.scss */
+  .even, .odd {
+    display: inline;
+    float: left;
+    width: 252px;
+    margin-right: 24px;
+    margin-bottom: 1.0em;
+    margin-right: 0;
+  }
+  /* line 22, ../../sass/partials/_mobile.scss */
+  .even h1, .odd h1 {
+    font-size: 1.3em;
+  }
+}
+/* Wide Mobile Layout: 480px.
+ * Gutters: 24px.
+ * Outer margins: 22px.
+ * Inherits styles from: Default Layout, Mobile Layout.  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 7, ../../sass/partials/_wide-mobile.scss */
+  #wrap {
+    overflow: hidden;
+    *zoom: 1;
+    width: 436px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 482 50%, color-stop(4.564%, rgba(0, 0, 0, 0)), color-stop(4.564%, rgba(100, 100, 225, 0.25)), color-stop(18.672%, rgba(100, 100, 225, 0.25)), color-stop(18.672%, rgba(0, 0, 0, 0)), color-stop(23.651%, rgba(0, 0, 0, 0)), color-stop(23.651%, rgba(100, 100, 225, 0.25)), color-stop(37.759%, rgba(100, 100, 225, 0.25)), color-stop(37.759%, rgba(0, 0, 0, 0)), color-stop(42.739%, rgba(0, 0, 0, 0)), color-stop(42.739%, rgba(100, 100, 225, 0.25)), color-stop(56.846%, rgba(100, 100, 225, 0.25)), color-stop(56.846%, rgba(0, 0, 0, 0)), color-stop(61.826%, rgba(0, 0, 0, 0)), color-stop(61.826%, rgba(100, 100, 225, 0.25)), color-stop(75.934%, rgba(100, 100, 225, 0.25)), color-stop(75.934%, rgba(0, 0, 0, 0)), color-stop(80.913%, rgba(0, 0, 0, 0)), color-stop(80.913%, rgba(100, 100, 225, 0.25)), color-stop(95.021%, rgba(100, 100, 225, 0.25)), color-stop(95.021%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 22px, rgba(100, 100, 225, 0.25) 22px, rgba(100, 100, 225, 0.25) 90px, rgba(0, 0, 0, 0) 90px, rgba(0, 0, 0, 0) 114px, rgba(100, 100, 225, 0.25) 114px, rgba(100, 100, 225, 0.25) 182px, rgba(0, 0, 0, 0) 182px, rgba(0, 0, 0, 0) 206px, rgba(100, 100, 225, 0.25) 206px, rgba(100, 100, 225, 0.25) 274px, rgba(0, 0, 0, 0) 274px, rgba(0, 0, 0, 0) 298px, rgba(100, 100, 225, 0.25) 298px, rgba(100, 100, 225, 0.25) 366px, rgba(0, 0, 0, 0) 366px, rgba(0, 0, 0, 0) 390px, rgba(100, 100, 225, 0.25) 390px, rgba(100, 100, 225, 0.25) 458px, rgba(0, 0, 0, 0) 458px, rgba(0, 0, 0, 0) 482px);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 22px, rgba(100, 100, 225, 0.25) 22px, rgba(100, 100, 225, 0.25) 90px, rgba(0, 0, 0, 0) 90px, rgba(0, 0, 0, 0) 114px, rgba(100, 100, 225, 0.25) 114px, rgba(100, 100, 225, 0.25) 182px, rgba(0, 0, 0, 0) 182px, rgba(0, 0, 0, 0) 206px, rgba(100, 100, 225, 0.25) 206px, rgba(100, 100, 225, 0.25) 274px, rgba(0, 0, 0, 0) 274px, rgba(0, 0, 0, 0) 298px, rgba(100, 100, 225, 0.25) 298px, rgba(100, 100, 225, 0.25) 366px, rgba(0, 0, 0, 0) 366px, rgba(0, 0, 0, 0) 390px, rgba(100, 100, 225, 0.25) 390px, rgba(100, 100, 225, 0.25) 458px, rgba(0, 0, 0, 0) 458px, rgba(0, 0, 0, 0) 482px);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 22px, rgba(100, 100, 225, 0.25) 22px, rgba(100, 100, 225, 0.25) 90px, rgba(0, 0, 0, 0) 90px, rgba(0, 0, 0, 0) 114px, rgba(100, 100, 225, 0.25) 114px, rgba(100, 100, 225, 0.25) 182px, rgba(0, 0, 0, 0) 182px, rgba(0, 0, 0, 0) 206px, rgba(100, 100, 225, 0.25) 206px, rgba(100, 100, 225, 0.25) 274px, rgba(0, 0, 0, 0) 274px, rgba(0, 0, 0, 0) 298px, rgba(100, 100, 225, 0.25) 298px, rgba(100, 100, 225, 0.25) 366px, rgba(0, 0, 0, 0) 366px, rgba(0, 0, 0, 0) 390px, rgba(100, 100, 225, 0.25) 390px, rgba(100, 100, 225, 0.25) 458px, rgba(0, 0, 0, 0) 458px, rgba(0, 0, 0, 0) 482px);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 22px, rgba(100, 100, 225, 0.25) 22px, rgba(100, 100, 225, 0.25) 90px, rgba(0, 0, 0, 0) 90px, rgba(0, 0, 0, 0) 114px, rgba(100, 100, 225, 0.25) 114px, rgba(100, 100, 225, 0.25) 182px, rgba(0, 0, 0, 0) 182px, rgba(0, 0, 0, 0) 206px, rgba(100, 100, 225, 0.25) 206px, rgba(100, 100, 225, 0.25) 274px, rgba(0, 0, 0, 0) 274px, rgba(0, 0, 0, 0) 298px, rgba(100, 100, 225, 0.25) 298px, rgba(100, 100, 225, 0.25) 366px, rgba(0, 0, 0, 0) 366px, rgba(0, 0, 0, 0) 390px, rgba(100, 100, 225, 0.25) 390px, rgba(100, 100, 225, 0.25) 458px, rgba(0, 0, 0, 0) 458px, rgba(0, 0, 0, 0) 482px);
+    background-position: left top;
+  }
+
+  /* line 11, ../../sass/partials/_wide-mobile.scss */
+  header > h1 {
+    font-size: 7.0em;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+  }
+
+  /* line 16, ../../sass/partials/_wide-mobile.scss */
+  .even, .odd {
+    display: inline;
+    float: left;
+    width: 436px;
+    margin-right: 24px;
+    margin-bottom: 1.0em;
+    margin-right: 0;
+  }
+}
+/* Retina media query.
+   Overrides styles for devices with a
+   device-pixel-ratio of 2+, such as iPhone 4.  */
